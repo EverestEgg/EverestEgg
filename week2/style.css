@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(219, 64, 29);
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
