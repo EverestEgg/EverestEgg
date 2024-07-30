@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(219, 64, 29);
+  color: white;
+  padding: 5px;
+}
+.title {
+  text-align: center;
+  font-family: cursive;
+}
