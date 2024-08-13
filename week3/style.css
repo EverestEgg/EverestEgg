@@ -1,0 +1,26 @@
+* {
+  background-color: yellowgreen;
+  color: rgb(255, 238, 0);
+}
+/* This is a comment, shoetcut ctrl/ */
+h1 {
+  position: relative;
+  border: solid;
+  padding: 10px;
+  background-color: rgb(100, 139, 21);
+}
+#txt {
+  position: relative;
+  font-family: fantasy;
+  letter-spacing: 50px;
+  font-weight: lighter;
+  padding-left: 100px;
+}
+
+p {
+  border: 5px rgb(8, 8, 138) inset;
+  padding: 20px;
+  background-color: aqua;
+  margin: 5px;
+  margin-top: 20px;
+}
