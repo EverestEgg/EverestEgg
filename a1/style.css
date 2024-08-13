@@ -2,14 +2,14 @@
     text-align: center;
     font-size: 100%;
 }
-#grid{
+ #grid{ /*Lays out the nav and main content in a grid, but not the header   */
     display: grid;
     grid-template-columns: 1fr 5fr;
     padding: 4px;
     position: relative
 }
 
-.title{
+ .title{/* Class to ensure all the titles have a consistedn design */
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 105%;
@@ -22,8 +22,9 @@ header{
    font-size: 130%;
    
    border: solid 1px;
-   padding: 10px;
-   margin-bottom: 0px;
+   padding: 0px;
+   padding-bottom: 25px;
+   margin-bottom: 10px;
 }
 
 nav{
@@ -32,7 +33,7 @@ nav{
 menu{
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: 5px;
     padding: 0px;
     margin-top: 50px;
 
@@ -50,6 +51,12 @@ li{
     margin-bottom: 8%;
 }
 
+li:hover {
+    background-color: green;
+    border: solid;
+
+}
+
 main{
     position: relative;
   
@@ -65,5 +72,5 @@ section{
 p{
     border:none;
     padding: 8px;
-     text-align: center;
+    text-align: center;
 }
