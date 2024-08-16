@@ -23,15 +23,18 @@ main{
     border: ridge rgb(9, 75, 66) 2px;
     background-color: #17b8e95d;
 
-    font-family: "Kode Mono", monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p{
-    position: relative;
-    
-    border:none;
-    padding: 8px;   
+   font-size: 115%;
+    padding: 10px;   
 }
+/* Subtle change ensure the list is not right agaist the border and gives the viewermore space */
+menu{
+    padding-left: 20px;
+}
+
 
 /* Header titles and design */
 header{
@@ -60,25 +63,61 @@ h1{
     padding: 4px;
 }
 h2{
+    position: relative;
+    left: 15%;
+    /* Indents the 2 sub-titles in the header to have the flow between them be better*/
+
     font-size: 200%;
     font-weight: 400;
-    padding-left: 4;
+    padding-left: 4px;
 }
 h3{
+    position: relative;
+    left: 25%;
+
     font-size: 170%;
     font-weight: 200;
-    padding-left: 4;
+    padding-left: 4px;
 }
 
 /* Sub titles */
 h4{
     font-weight: bold;
     font-size: 120%;
-    text-align: center;
+    font-style: italic;
 }
 section{
-    text-decoration: underline;
+    text-decoration: underline double 2px;
     font-size: xx-large;
     text-align: center;
+    font-family: "Ysabeau Office", sans-serif;
+
+    padding: 4px;
+}
+footer{
+    height: 80px;
+}
+a{
+    position: absolute;
+    left: 33%;
+    min-width: 35%;
+    padding: 7px;
+    
+    border: solid 1px;
+    border-radius: 20px;
+    background: #21a15079;
+    color: rgb(188, 139, 235);
+
+    font-family: "Ysabeau Office", sans-serif;
+    text-decoration: none;
+    font-size:x-large;
+    text-align: center;
+    letter-spacing: 6px;
+}
+/* Changes the colours when hovered to communicat that this is a link */
+a:hover{
+    background: #394097;
+    color: rgb(203, 162, 243);
 }
 
+/* Make images when hovered over get bigger and easier to see for user */
