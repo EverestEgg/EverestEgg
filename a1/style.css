@@ -120,4 +120,18 @@ a:hover{
     color: rgb(203, 162, 243);
 }
 
+img{
+   position: relative; 
+   height: 90%;
+   width: 90%;
+   left: 4%;
+   top: 0%;
+
+    border-radius: 20px;
+    margin: 5px;
+    border: solid rgb(13, 71, 13);
+    object-fit: cover;
+    
+}
+
 /* Make images when hovered over get bigger and easier to see for user */
