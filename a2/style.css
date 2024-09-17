@@ -63,6 +63,13 @@
     text-decoration: none;
     color: var(--text-color);
   }
+
+  h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 5px;
+    color: var(--text-color);
+  }
   
   /* Media player styling */
   .media-player {
@@ -145,7 +152,7 @@
     padding: 20px;
   }
 
-  h3, h2{
+  h3{
     font-weight: bold;
     font-size: larger;
     margin: 5px;
