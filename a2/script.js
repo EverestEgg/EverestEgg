@@ -84,6 +84,7 @@ function toggleRep() {
   }
 }
 
+// Function to change both skip fowrard and back in the video
 function skip5(y) {
   video.currentTime += y;
 }

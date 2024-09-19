@@ -41,12 +41,15 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  height: 18%;
 }
 
 /* Navigation styling */
 nav {
-  margin-top: 20px;
+  padding: 17px;
   text-align: center;
+  width: 100%;
+  background-color: aqua;
 }
 
 nav ul {
@@ -67,7 +70,8 @@ nav a {
 h2 {
   font-weight: bold;
   font-size: 40px;
-  margin: 5px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   color: var(--text-color);
 }
 
@@ -129,6 +133,7 @@ h2 {
   font-size: 16px;
   display: inline-flex;
   align-items: center;
+  margin-left: 5px;
 }
 
 .progress-bar {
@@ -152,17 +157,24 @@ h2 {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  /* Displaying in a grid to allow be able to see the matirals and methord at the same time
+  And helps keep as much of the video visabule when navigaitng via timestamps */
 }
 
 .extraInfo menu {
   list-style: circle;
   cursor: default;
 }
+.matMen {
+  font-style: italic;
+  font-size: larger;
+}
 
 .time {
   font-weight: bold;
   font-style: italic;
   padding: 1px;
+  border-bottom: solid;
 }
 .time:hover {
   background-color: #333;
@@ -172,7 +184,7 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: larger;
+  font-size: x-large;
   margin: 5px;
 }
 
