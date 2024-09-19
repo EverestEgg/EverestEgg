@@ -7,7 +7,9 @@ h1 {
   position: relative;
   border: solid;
   padding: 10px;
+  margin-left: 20px;
   background-color: rgb(100, 139, 21);
+  width: 80%;
 }
 #txt {
   position: relative;
@@ -23,4 +25,8 @@ p {
   background-color: aqua;
   margin: 5px;
   margin-top: 20px;
+}
+p:hover {
+  color: black;
+  background-color: brown;
 }

@@ -1,185 +1,186 @@
 :root {
-    --primary-bg-color: #f4f4f4;
-    --text-color: #333;
-    --main-bg-color: rgb(5, 5, 5);
-    --main-text-color: #fff;
-    --main-btn-bg-color: #938989;
-  }
-  
-  body,
-  h1,
-  p,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Arial", sans-serif;
-    background-color: var(--primary-bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Add additional styles as needed */
-  
-  /* Create a container for the main content */
-  .container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  /* Header styling */
-  header {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-  }
-  
-  /* Navigation styling */
-  nav {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--text-color);
-  }
+  --primary-bg-color: #f4f4f4;
+  --text-color: #333;
+  --main-bg-color: rgb(5, 5, 5);
+  --main-text-color: #fff;
+  --main-btn-bg-color: #938989;
+}
 
-  h2{
-    font-weight: bold;
-    font-size: 40px;
-    margin: 5px;
-    color: var(--text-color);
-  }
-  
-  /* Media player styling */
-  .media-player {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .vid {
-    max-width: 100%;
-    min-width: 100%;
-    border: solid 3px black;
-  }
-  /* Class for the video when it becomes full screen */
-  .fulVid {
-    position: fixed;
-    top: .5%;
-    bottom: 1%;
-    left: 8%;
-    margin: 1%;
-    width: auto;
-    height: 95%;
-    outline: solid 99999px black;
-  }
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add additional styles as needed */
+
+/* Create a container for the main content */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Header styling */
+header {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 5px;
+  color: var(--text-color);
+}
+
+/* Media player styling */
+.media-player {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.vid {
+  max-width: 100%;
+  min-width: 100%;
+  border: solid 3px black;
+}
+/* Class for the video when it becomes full screen */
+.fulVid {
+  position: fixed;
+  top: 0.5%;
+  bottom: 1%;
+  left: 8%;
+  margin: 1%;
+  width: auto;
+  height: 95%;
+  outline: solid 99999px black;
+}
 .bodyf {
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 .ful {
-    position: fixed;
-    top: 92%;
-    right: 95%;
-    background-color: var(#9389894f);
+  position: fixed;
+  top: 92%;
+  right: 95%;
+  background-color: var(#9389894f);
 }
 .ppful {
-    position: fixed;
-    top: 92%;
-    right: 92%;
-    background-color: var(#9389894f);
+  position: fixed;
+  top: 92%;
+  right: 92%;
+  background-color: var(#9389894f);
 }
-  
-  .custom-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 10px;
-    width: 100%;
-    display: block;
-    /* Ensures the progress bar is not unline with the buttons */
-  }
-  
-   .custom-controls button {
-    background-color: var(--main-btn-bg-color);
-    color: var(--main-text-color);
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center; 
-  }
-  
-  .progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    margin-top: 10px;
-    overflow: hidden;
-    display: block;
-  }
-  
-  .progress-bar span {
-    display: block;
-    height: 100%;
-    background-color: var(--main-bg-color);
-    width: 0;
-    transition: width 0.3s ease;
-  }
 
-  .extraInfo {
-    padding: 20px;
-  }
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  /* Ensures the progress bar is not unline with the buttons */
+}
 
-  .extraInfo menu {
-    list-style: circle;
-    cursor: default;
-  }
+.custom-controls button {
+  background-color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
 
-  .time{
-    font-weight: bold;
-    font-style: italic;
-    padding: 1px;
-  }
-  .time:hover{
-    background-color: #333;
-    color: #f4f4f4;
-    cursor: pointer;
-  }
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  overflow: hidden;
+  display: block;
+}
 
-  h3{
-    font-weight: bold;
-    font-size: larger;
-    margin: 5px;
-  }
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  width: 0;
+  transition: width 0.3s ease;
+}
 
-  /* Footer styling */
-  footer {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-  }
-  
+.extraInfo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.extraInfo menu {
+  list-style: circle;
+  cursor: default;
+}
+
+.time {
+  font-weight: bold;
+  font-style: italic;
+  padding: 1px;
+}
+.time:hover {
+  background-color: #333;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: larger;
+  margin: 5px;
+}
+
+/* Footer styling */
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}

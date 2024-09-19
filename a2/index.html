@@ -27,9 +27,9 @@
 
     <!-- Main Content Section -->
     <main class="container">
-        <h2>How To Make A Windmill</h2>
+      <h2>How To Make A Windmill</h2>
       <!-- Media Player Section -->
-     <div class="media-player">
+      <div class="media-player">
         <video id="custom-video-player" controls class="vid">
           <source
             src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4"
@@ -38,12 +38,11 @@
         </video>
 
         <div class="custom-controls">
-          
           <!-- add the missing buttons or functionality here -->
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
-          <br>
+          <br />
 
           <!-- Play and pause button -->
           <button id="play-pause-btn" onclick="togglePlayPause()">
@@ -70,78 +69,143 @@
           <button id="mute-btn" onclick="toggleMute()">
             <img
               id="mute-img"
-              src="https://img.icons8.com/?size=100&id=91635&format=png&color=000000"
+              src="https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000"
               alt="Mute Button"
               width="24"
               height="24"
             />
           </button>
 
-          <button id="repeat-btn">
+          <button id="repeat-btn" onclick="toggleRep()">
             <img
               id="repeat-img"
-              src="https://img.icons8.com/?size=100&id=91481&format=png&color=000000"
+              src="norep.png"
               alt="Repeat Button"
               width="24"
               height="24"
             />
           </button>
 
-          <button id="rewind-btn">
+          <button id="rewind-btn" onclick="skip5(-5)">
             <img
               id="rewind-img"
-              src="https://img.icons8.com/?size=100&id=91480&format=png&color=000000"
+              src="https://img.icons8.com/?size=100&id=91639&format=png&color=000000"
               alt="Rewind Button"
               width="24"
               height="24"
             />
           </button>
-
-          <button id="foward-btn">
+          <!-- adds the ability to skip 5 seconds foward and back incause the user miss a small section or needed to
+           quckly rewatch the section they just saw - very usefule when following instructions -->
+          <button id="foward-btn" onclick="skip5(5)">
             <img
               id="foward-img"
-              src="https://img.icons8.com/?size=100&id=91476&format=png&color=000000"
+              src="https://img.icons8.com/?size=100&id=91631&format=png&color=000000"
               alt="Fast Foward Button"
               width="24"
               height="24"
             />
           </button>
-
-        
         </div>
       </div>
 
       <!-- Additional Content Section -->
+
       <section class="extraInfo">
-        
-        <h3>Materials:</h3>
         <menu>
-            <li>Foam sheet</li>
-            <li>Scissors </li>
-            <li>Glue Dots</li>
-            <li>Paper straws</li>
-            <li>Pen </li>
-            <li>Ruler </li>
-            <li>Pipe Cleaners</li>
+          <h3>Materials:</h3>
+          <li>Foam sheet</li>
+          <li>Scissors</li>
+          <li>Glue Dots</li>
+          <li>Paper straws</li>
+          <li>Pen</li>
+          <li>Ruler</li>
+          <li>Pipe Cleaners</li>
         </menu>
-        <h3>Methord:</h3>
         <menu>
-          <li> <span id="time1" class="time">0:30 - Step 1 -</span> Cut form into a 12.5 cm square</li>
-          <li> <span id="time2" class="time">0:42 – Step 2- </span>Fold the foam square in half diagonally to make a triangle. Unfold and refold the other diagonal </li>
-          <li> <span id="time3" class="time">0:53 - Step 3 -</span> Make a hole in the middle of the two folds using a pen </li>
-          <li> <span id="time4" class="time">1:10 - Step 4 - </span>Then use some scissors to cut along the fold lines halfway into the middle. Then poke 4 holes at the edge of the foam, one on each side of the cut you just made </li>
-          <li> <span id="time5" class="time">1:20 – Step 5 – </span>Under each edge hole place a glue dot </li>
-          <li> <span id="time6" class="time">1:38 – Step 6 – </span>bring each corner into the middle so the holes stack on top of each other, using the glue dot to stick them together. You need to be able to stick a Pipe cleaner through the hole </li>
-          <li> <span id="time7" class="time">2:05 – Step 7 –</span> Using one of the off cuts of foam, press down on it using the lid of the glue stick to create an impression in the foam. Cut out this circle using scissors and punch a hole in the middle. Do this twice to create 2 circles.  </li>
-          <li> <span id="time8" class="time">2:45 – Step 8 –</span> Wrap the pipe cleaner around the straw, so about half the pipe cleaner remains sticking out </li>
-          <li> <span id="time9" class="time">2:56 – Step 9 –</span>  Thread one of the smaller foam circles onto the pipe cleaner. Then thread the foam windmill onto the pipe cleaner, add the final foam circle onto the pipe cleaner </li>
-          <li> <span id="time10" class="time">3:25 –Step 10 –</span> Cut the pipe cleaner so only about 2cm is left sticking out. Then wrap the remaking pipe cleaner around so it holds the foam circus and windmill section onto the straw. </li>
-          Done
+          <h3>Methord:</h3>
+          <li>
+            <span id="time1" class="time" onclick="timeJump(30)"
+              >0:30 - Step 1 -</span
+            >
+            <!-- Adding buttons that allow user to jump to specific sections of the video
+              to help with rewatching and navigatieng to specific steps -->
+            Cut form into a 12.5 cm square
+          </li>
+          <li>
+            <span id="time2" class="time" onclick="timeJump(42)"
+              >0:42 – Step 2-
+            </span>
+            Fold the foam square in half diagonally to make a triangle. Unfold
+            and refold the other diagonal
+            <!-- Has written version of the steps in the video for people who learn better with written steps or 
+             want to use both learning methords -->
+          </li>
+          <li>
+            <span id="time3" class="time" onclick="timeJump(53)"
+              >0:53 - Step 3 -</span
+            >
+            Make a hole in the middle of the two folds using a pen
+          </li>
+          <li>
+            <span id="time4" class="time" onclick="timeJump(70)"
+              >1:10 - Step 4 - </span
+            >Then use some scissors to cut along the fold lines halfway into the
+            middle. Then poke 4 holes at the edge of the foam, one on each side
+            of the cut you just made
+          </li>
+          <li>
+            <span id="time5" class="time" onclick="timeJump(80)"
+              >1:20 – Step 5 – </span
+            >Under each edge hole place a glue dot
+          </li>
+          <li>
+            <span id="time6" class="time" onclick="timeJump(98)"
+              >1:38 – Step 6 – </span
+            >Bring each corner into the middle so the holes stack on top of each
+            other, using the glue dot to stick them together. You need to be
+            able to stick a Pipe cleaner through the hole
+          </li>
+          <li>
+            <span id="time7" class="time" onclick="timeJump(125)"
+              >2:05 – Step 7 –</span
+            >
+            Using one of the off cuts of foam, press down on it using the lid of
+            the glue stick to create an impression in the foam. Cut out this
+            circle using scissors and punch a hole in the middle. Do this twice
+            to create 2 circles.
+          </li>
+          <li>
+            <span id="time8" class="time" onclick="timeJump(165)"
+              >2:45 – Step 8 –</span
+            >
+            Wrap the pipe cleaner around the straw, so about half the pipe
+            cleaner remains sticking out
+          </li>
+          <li>
+            <span id="time9" class="time" onclick="timeJump(176)"
+              >2:56 – Step 9 –</span
+            >
+            Thread one of the smaller foam circles onto the pipe cleaner. Then
+            thread the foam windmill onto the pipe cleaner, add the final foam
+            circle onto the pipe cleaner
+          </li>
+          <li>
+            <span id="time10" class="time" onclick="timeJump(205)"
+              >3:25 –Step 10 –</span
+            >
+            Cut the pipe cleaner so only about 2cm is left sticking out. Then
+            wrap the remaking pipe cleaner around so it holds the foam circus
+            and windmill section onto the straw.
+          </li>
+          <li>
+            <span id="timeend" class="time" onclick="timeJump(270)"
+              >END–ish</span
+            >
+          </li>
         </menu>
 
         <!-- Add more content as needed -->
-
-
       </section>
     </main>
 
