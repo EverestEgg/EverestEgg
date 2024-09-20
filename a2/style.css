@@ -1,10 +1,13 @@
 :root {
-  --primary-bg-color: #f4f4f4;
-  --text-color: #333;
-  --main-bg-color: rgb(5, 5, 5);
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --primary-bg-color: #f2fdfb;
+  --text-color: #161817;
+  --main-bg-color: #15291D;
+  --main-text-color: #bbbbbb;
+  --main-btn-bg-color: #4c8161;
+  --head-bg-colour: #2c553c;
 }
+
+
 
 body,
 h1,
@@ -25,7 +28,6 @@ body {
   justify-content: space-between;
 }
 
-/* Add additional styles as needed */
 
 /* Create a container for the main content */
 .container {
@@ -37,19 +39,32 @@ body {
 /* Header styling */
 header {
   background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  padding: 10px 0;
-  text-align: center;
+  padding-top: 50;
   width: 100%;
-  height: 18%;
+  height: 15%;
+
+  text-align: center;
+  font-family:serif;
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 60px;
+  justify-content: baseline;
+  
+  border-bottom: dashed;
+
+  background-image: url(logo.png);
+  background-position: 40% 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 
 /* Navigation styling */
 nav {
   padding: 17px;
   text-align: center;
   width: 100%;
-  background-color: aqua;
+  background-color: var( --head-bg-colour);
 }
 
 nav ul {
@@ -59,12 +74,17 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+/* helps enfore that these are button to the user */
+nav a:hover {
+ color: rgb(179, 247, 195);
 }
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 h2 {
@@ -84,33 +104,40 @@ h2 {
 .vid {
   max-width: 100%;
   min-width: 100%;
-  border: solid 3px black;
+  border: solid 3px var(--head-bg-colour);
 }
 /* Class for the video when it becomes full screen */
+#bodyf { 
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: #0f1f14;
+}
+
 .fulVid {
   position: fixed;
-  top: 0.5%;
-  bottom: 1%;
+  bottom: 2%;
   left: 8%;
-  margin: 1%;
-  width: auto;
   height: 95%;
-  outline: solid 99999px black;
+  display: flex;
+  border: solid 3px var(--head-bg-colour);
 }
-.bodyf {
-  background-color: var(--main-bg-color);
-}
+
+
+
+/* Class for moveing the fullscreen and play buttons in fullscreen mode */
 .ful {
   position: fixed;
   top: 92%;
-  right: 95%;
+  right: 92%;
   background-color: var(#9389894f);
 }
 .ppful {
   position: fixed;
   top: 92%;
-  right: 92%;
-  background-color: var(#9389894f);
+  right: 95%;
 }
 
 .custom-controls {
@@ -135,11 +162,15 @@ h2 {
   align-items: center;
   margin-left: 5px;
 }
+.custom-controls button:hover{
+  background-color: rgb(52, 124, 94);
+  border: solid 1px var(--main-bg-color);
+}
 
 .progress-bar {
   width: 100%;
-  height: 10px;
-  background-color: #ddd;
+  height: 15px;
+  background-color: #c7ddd0;
   margin-top: 10px;
   overflow: hidden;
   display: block;
@@ -175,9 +206,10 @@ h2 {
   font-style: italic;
   padding: 1px;
   border-bottom: solid;
+  color: #153822;
 }
 .time:hover {
-  background-color: #333;
+  background-color: var(--main-bg-color);
   color: #f4f4f4;
   cursor: pointer;
 }
@@ -192,7 +224,9 @@ h3 {
 footer {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  text-align: center;
-  padding: 10px 0;
+  padding: 20px 15px 5px 30px;
   width: 100%;
+}
+footer a {
+  color: #8832cf;
 }

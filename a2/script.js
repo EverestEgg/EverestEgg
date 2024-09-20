@@ -3,11 +3,13 @@ const playPauseBtn = document.querySelector("#play-pause-btn");
 const playPauseImg = document.querySelector("#play-pause-img");
 const progressBar = document.querySelector("#progress-bar-fill");
 
-const bodyE = document.querySelector("body");
+const fulBac = document.querySelector("#bodyf");
 const fullScrBtn = document.querySelector("#full-btn");
 const muteunImg = document.querySelector("#mute-img");
 const repImg = document.querySelector("#repeat-img");
+const speedImg = document.querySelector("#speed-img");
 let fullScr = false;
+let playRate = 1;
 
 video.removeAttribute("controls");
 // playPauseBtn.addEventListener("click", togglePlayPause);
@@ -35,15 +37,15 @@ function toggleFull() {
   if (fullScr == false) {
     video.className = "fulVid";
     fullScrBtn.className = "ful";
-    bodyE.className = "bodyf";
+    fulBac.hidden = false;
     playPauseBtn.className = "ppful";
-    // Get play and paus button class working
+
     fullScr = true;
   } else {
     video.className = "vid";
     fullScrBtn.className = "";
-    bodyE.className = "";
     playPauseBtn.className = "";
+    fulBac.hidden = true;
     fullScr = false;
   }
 }
@@ -88,3 +90,26 @@ function toggleRep() {
 function skip5(y) {
   video.currentTime += y;
 }
+
+// function used to cycle through diffrent playback rates and minimise the amount of buttons on the controle bar
+function changeSpeed(){
+  switch(playRate){
+  case 1:
+    video.playbackRate = 1.5;
+    playRate = 1.5;
+    speedImg.src = "speed1.5.png";
+    break;
+
+  case 1.5:
+    video.playbackRate = 2; 
+    playRate = 2;
+    speedImg.src = "speed2.png";
+    break;
+
+  case 2:
+    video.playbackRate = 1;
+    playRate = 1;
+    speedImg.src = "speed1.png";
+    break;
+ }}
+ 
