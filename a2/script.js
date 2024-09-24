@@ -92,24 +92,24 @@ function skip5(y) {
 }
 
 // function used to cycle through diffrent playback rates and minimise the amount of buttons on the controle bar
-function changeSpeed(){
-  switch(playRate){
-  case 1:
-    video.playbackRate = 1.5;
-    playRate = 1.5;
-    speedImg.src = "speed1.5.png";
-    break;
+function changeSpeed() {
+  switch (playRate) {
+    case 1:
+      video.playbackRate = 1.5;
+      playRate = 1.5;
+      speedImg.src = "speed1.5.png";
+      break;
 
-  case 1.5:
-    video.playbackRate = 2; 
-    playRate = 2;
-    speedImg.src = "speed2.png";
-    break;
+    case 1.5:
+      video.playbackRate = 2;
+      playRate = 2;
+      speedImg.src = "speed2.png";
+      break;
 
-  case 2:
-    video.playbackRate = 1;
-    playRate = 1;
-    speedImg.src = "speed1.png";
-    break;
- }}
- 
+    case 2:
+      video.playbackRate = 1;
+      playRate = 1;
+      speedImg.src = "speed1.png";
+      break;
+  }
+}

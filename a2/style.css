@@ -1,13 +1,11 @@
 :root {
   --primary-bg-color: #f2fdfb;
   --text-color: #161817;
-  --main-bg-color: #15291D;
+  --main-bg-color: #15291d;
   --main-text-color: #bbbbbb;
   --main-btn-bg-color: #4c8161;
   --head-bg-colour: #2c553c;
 }
-
-
 
 body,
 h1,
@@ -28,7 +26,6 @@ body {
   justify-content: space-between;
 }
 
-
 /* Create a container for the main content */
 .container {
   max-width: 1000px;
@@ -39,17 +36,17 @@ body {
 /* Header styling */
 header {
   background-color: var(--main-bg-color);
-  padding-top: 50;
   width: 100%;
   height: 15%;
 
   text-align: center;
-  font-family:serif;
+  font-family: serif;
   color: var(--main-text-color);
   font-weight: bold;
   font-size: 60px;
   justify-content: baseline;
-  
+  text-overflow: clip;
+
   border-bottom: dashed;
 
   background-image: url(logo.png);
@@ -58,13 +55,12 @@ header {
   background-repeat: no-repeat;
 }
 
-
 /* Navigation styling */
 nav {
   padding: 17px;
   text-align: center;
   width: 100%;
-  background-color: var( --head-bg-colour);
+  background-color: var(--head-bg-colour);
 }
 
 nav ul {
@@ -79,7 +75,7 @@ nav ul li {
 
 /* helps enfore that these are button to the user */
 nav a:hover {
- color: rgb(179, 247, 195);
+  color: rgb(179, 247, 195);
 }
 
 nav a {
@@ -107,8 +103,8 @@ h2 {
   border: solid 3px var(--head-bg-colour);
 }
 /* Class for the video when it becomes full screen */
-#bodyf { 
-  position:fixed;
+#bodyf {
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0%;
@@ -124,8 +120,6 @@ h2 {
   display: flex;
   border: solid 3px var(--head-bg-colour);
 }
-
-
 
 /* Class for moveing the fullscreen and play buttons in fullscreen mode */
 .ful {
@@ -162,7 +156,7 @@ h2 {
   align-items: center;
   margin-left: 5px;
 }
-.custom-controls button:hover{
+.custom-controls button:hover {
   background-color: rgb(52, 124, 94);
   border: solid 1px var(--main-bg-color);
 }
@@ -190,6 +184,14 @@ h2 {
   grid-template-columns: 1fr 3fr;
   /* Displaying in a grid to allow be able to see the matirals and methord at the same time
   And helps keep as much of the video visabule when navigaitng via timestamps */
+}
+
+@media (max-width: 600px) {
+  .extraInfo {
+    display: flex;
+    flex-direction: column;
+    /* Changes to a flex dislay at small screen szises to accomdate phone uses */
+  }
 }
 
 .extraInfo menu {
