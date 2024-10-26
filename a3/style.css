@@ -1,0 +1,137 @@
+:root{
+    --hover-colour: rgb(4, 61, 83);
+}
+
+body{
+    background-color:#02000e;
+    margin: 0;
+}
+
+#Gradient{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0.79deg, #3f4380 -34.32%, rgba(5, 0, 51, 0) 50.38%);
+}
+
+#input{
+position: absolute;
+display: flex;
+height: 20%;
+bottom: 0%;
+width: 100%;
+
+justify-content: center;
+
+}
+
+.option{
+    position: relative;
+    height: 60%;
+    width: 20%;
+    left: 7%;
+    margin-right: 10%;
+    padding: 15px;
+
+
+    font-family:  "Pixelify Sans", monospace;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 3px; 
+    color: #57ffdb;
+        
+    background-color: #1f2781;    
+    border: inset 4px rgb(15, 79, 104); 
+}
+
+.option:hover{
+    background-color: var(--hover-colour);    
+    border: inset 4px rgb(14, 134, 182); 
+    color: #57ffdb;
+}
+
+
+/* Stye for spart screen */
+#start{
+    position: fixed;
+    width: 15%;
+    height: 7%;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family:  "Pixelify Sans", monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    letter-spacing: 3px; 
+    color: #57ffdb;
+        
+    background-color: #1f2781;    
+    border: inset 4px rgb(15, 79, 104); 
+
+}
+#start:hover{
+    background-color: var(--hover-colour);    
+    border: inset 4px rgb(14, 134, 182); 
+    color: #57ffdb;  
+}
+#startback{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background-color: #050a35;
+}
+
+
+/* style for the image and resonce text */
+#responce{ 
+    position: absolute;
+    width: 75%;
+    height: 60%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+
+    
+   background-color: #040114;
+   padding: 10px;
+   border: inset 4px rgb(15, 79, 104);
+    
+}  
+#image{
+    position: relative;
+    display: block;
+    height: 70%;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    object-fit: cover;
+    border: 7px solid #0c1142;
+}
+p{      
+    position:inherit;
+    display: block;
+    bottom: 0%;
+    height: 25%;
+    min-width: 100%;
+
+
+    padding: 10px;
+    
+    font-family:  "Pixelify Sans", monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: auto;
+    letter-spacing: 0.15em;
+    color: #bad0fa;  
+
+
+}
