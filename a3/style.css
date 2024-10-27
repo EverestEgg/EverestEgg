@@ -14,6 +14,13 @@ body{
 
     background: linear-gradient(0.79deg, #3f4380 -34.32%, rgba(5, 0, 51, 0) 50.38%);
 }
+button{
+    cursor: crosshair;
+}
+button:active {
+    box-shadow: 0 5px rgb(8, 44, 58);
+  transform: translateY(4px);
+}
 
 #input{
 position: absolute;
@@ -120,18 +127,16 @@ p{
     position:inherit;
     display: block;
     bottom: 0%;
-    height: 25%;
+    height: 28%;
     min-width: 100%;
-
-
-    padding: 10px;
+    padding: 5px;
     
     font-family:  "Pixelify Sans", monospace;
     font-style: normal;
     font-weight: 700;
-    font-size: auto;
+    font-size: 115%;
     letter-spacing: 0.15em;
     color: #bad0fa;  
-
-
+    overflow: auto; 
+    /* Adds a scroll bar if text overflows to help ajust to diffrent sized screens */
 }
