@@ -13,6 +13,8 @@ const waveaud = document.getElementById("wavesau");
 const dooraud = document.getElementById("doorau");
 const startbutton = document.getElementById("start");
 const startback = document.getElementById("startback");
+const backimg = document.getElementById("backimage");
+const subactive = document.getElementById("activeimage");
 
 let storyMark = 0; // used to keep track of location in the story. 
 
@@ -64,6 +66,10 @@ function showText(message, index, speed, element) { // prints the letters one at
 
     }
 }
+function inside(){ // changes the backgound image to the insided of the submarin and remove the interactable image
+    subactive.style.display = "none";
+    backimg.src = "images/inside.jpg";
+}
 
 // function to determins where in the story and what happnes next depening on what button is clicked and what has already been clicked
 function optionclick(opnum){
@@ -77,6 +83,7 @@ function optionclick(opnum){
             showText("Explore", 0, 50, "option 3");
             waveaud.pause();
             dooraud.play();
+            inside();
 
             op1.style.display = "none"; // deleate the selected button so can end story easier
 
@@ -110,7 +117,7 @@ function optionclick(opnum){
             showText("You walk to the end of the hallway, ignoring the other corridors. One of your crew disappears deeper down one of them, the other follows you to the control room. The room reveals itself; you are on a balcony with many control panels and lights, there is a ladder down that leads to more equipment and controls. There is a large window the covers both floors giving you a view of the fish and ocean floor.", 0, 15, "story");
             showText("Drive", 0, 50, "option 3");
             op2.style.display = "none";
-
+      
             storyMark = 4;
 
         } else if(opnum === 3) {
@@ -215,6 +222,7 @@ function optionclick(opnum){
         op1.style.display = "none";
         dooraud.play();
         showText("Ending 6/6", 0, 50, "endings");
+        inside();
 
     break;
 
