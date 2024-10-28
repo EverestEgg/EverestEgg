@@ -66,9 +66,7 @@ subactive.style.bottom = possub + "%";
 console.log(possub);
 }
 
-
-
-
+// function to fade the start screen and button that I couldne't get working
 
 // let ocupas = 100;
 // let fade = setInterval(fadeout, 2000);

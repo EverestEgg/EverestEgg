@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Submarine Adventure</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <!-- Script for the story and text controles -->
     <script src="animate.js" defer></script>
-    <!-- Script for the animation and elemnt movments (1 script was getting to confusing)-->
+    <!-- Script for the animations (1 script was getting confusing)-->
 
 </head>
 
 <body>
 
-    <!-- sercion were the impous can be made -->
+    <!-- section were the impouts can be made -->
     <div id="input">
         <div id="Gradient"></div>
         <button id="option 1" class="option" onclick="optionclick(1)"> Enter</button>
         <button id="option 2" class="option" onclick="optionclick(2)"> Explore</button>
         <button id="option 3" class="option" onclick="optionclick(3)"> Talk</button>
 
-        <div id="endings">
-            <!-- will display when your reach an ending -->
+        <div id="endings" onclick="restart()">
+            <!-- will display text when your reach an ending -->
          </div> 
     </div>
 
-    <!-- Section were all the respnce text and image changes are -->
+    <!-- Section were all the responce text and image changes are -->
   <div id="responce">   
      <div id="scene">
       <img src="images\beach.jpeg" alt="Pixel art beach" id="backimage">
@@ -39,16 +39,17 @@
     </div>
 
      <p id="story"> 
-     <!-- Text will change when story starts -->
+     <!-- Text will appear when story starts -->
      </p>
+     <!-- Ambinet wave audio -->
      <audio src="audio\531015__noted451__ocean-waves(1).wav" id="wavesau" loop></audio>
+     <!-- Door closing audio -->
      <audio src="audio\211078__originalmaja__squeaking-rattling-hatch-closes-nautilus.mp3" id="doorau"></audio>
     </div>
 
  
 
 
-<!-- Remivde hidden ayttbuten in final -->
 <div id="startback" ></div>
 <button id="start" onclick="begin()">Start </button>
 <!-- Opening audio -->
